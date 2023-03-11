@@ -1,0 +1,59 @@
+1)	Class is like a blueprint. Objects are the instances of class.
+2)	Class demo:
+def __init__(self,a,b):
+	Self.a = a
+	Self.b = b
+def add(self):
+	Print(a+b)
+	a = demo(2,3)
+	a.add()
+3) wrapping of data and hiding it is called encapsulation. We have three types in encapsulation that is public, protected and private.
+Eg:  your example, you don't "need to know the internal working of the mobile phone to operate" with it. You have an interface to use the device behaviour without knowing implementation details.
+4)polymorphism is one thing showing different behaviours
+Eg:- if we consider our phone it behaves as camera, musicplayer, alarm etc
+5) class demo:
+    def run(self):
+        print("i can run from demo")
+class sample(demo):
+    def run(self):
+        print("running from sample now")
+a = sample()
+a.run()
+
+Here in the above example we can fetch the method in demo class because its overrided. If we want to fetch then we have to use super method.
+
+7) abstraction is like an incomplete class we cannot create instances with it because its an incomplete class if we want to get instances we need to inherit that class to another class and have to use all those methods in the abstract class.
+
+8) from abc import ABC, abstractmethod
+class base(ABC):
+    @abstractmethod
+    def spam(self):
+        pass
+    @abstractmethod
+    def display(self):
+        pass
+    @abstractmethod
+    def act(self):
+        pass
+class derived(base):
+    def __init__(self,a,b):
+        self.a = a
+        self.b = b
+    def display(self):
+        print(self.a + self.b)
+    def spam(self):
+        print("you cant use this its just a spam")
+    def act(self):
+        print(self.a, self.b)
+
+a = derived(2,3)
+a.act()
+a.display()
+
+10)
+Inheritance is inheriting the properties if parent class to a child class is called inheritance.
+
+
+
+
+
